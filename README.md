@@ -119,5 +119,18 @@ Para el modelo Arduino UNO contaremos con los siguientes componentes
  - DC corriente 3.3V Pin 50 mA
  - EEPROM 512 bytes (Memoria ROM borrable eléctricamente)
  
+#### TinkerCAD
+**¿Qué es CAD?**
+
+Cuando hablamos de CAD nos referimos al diseño asistido por computadora traducido de sus siglas en inglés computer-aided design.
+**¿Qué es TinkerCAD?**
+
+TinkerCAD es un software desarrollado por AutoDesk para la creación de modelos 3D basado en geometría sólida constructiva (CSG), este software tiene la particularidad que no es necesario ser un gran experto en diseño 3D ya que inclusive niños pueden crear sus modelos a manera de aprendizaje.
+**¿Cómo se relaciona TinkerCAD con Arduino?**
+
+nkerCad tiene un emulador de circuitos electrónicos que viene incluido con un Arduino UNO para emular, incluido un editor de código de Arduino con algunas librerías y un depurador.
+Todas estas características hacen que no se no haga tan complicado crear programas y circuitos dentro de este entorno ya que el software es sumamente intuitivo y sencillo de usar. 
+Entorno
+
 
 
