@@ -99,6 +99,25 @@ Este es cerebro de nuestro Arduino el encargado de procesar datos e instruccione
   - UART
   - Otras comunicaciones.
   - CPU
+En otras palabras el microcontrolador es el Arduino ya que los pines del Arduino son jacks que facilitan la conexión con los pines del microcontrolador.
+Arduino usa la gama de microcontroladores AVR de Atmel pertenecientes a la familia de microcontroladores RISC. Cada microcontrolador posee diferentes características: tamaños, RAM, ROM, etc. El microcontrolador usado dependerá exclusivamente del modelo de Arduino.
 
+#### Componentes Arduino Uno
+Para el modelo Arduino UNO contaremos con los siguientes componentes
+ - El microprocesador ATmega328
+ - 32 kbytes de memoria Flash (Memoria donde se guardará nuestro programas y datos permanentes)
+ - 1 kbyte de memoria RAM (Memoria Temporal o de Datos Volátiles)
+ - 16 MHz (Velocidad de trabajo del microcontrolador)
+ - 14 pins para entradas/salidas digitales (programables)
+ - 5 pins para entradas analógicas (Pueden ser usadas como digitales)
+ - 6 pins para salidas analógicas (salidas PWM)
+ - Microcontrolador ATmega328
+ - Voltaje de operación 5V
+ - Voltaje de entrada (recomendado) 7-12 V
+ - Voltaje de entrada (limite) 6-20 V
+ - DC corriente I/O Pin 40 mA
+ - DC corriente 3.3V Pin 50 mA
+ - EEPROM 512 bytes (Memoria ROM borrable eléctricamente)
+ 
 
 
