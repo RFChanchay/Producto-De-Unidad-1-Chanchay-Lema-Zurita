@@ -10,3 +10,6 @@
      - Explorar los entornos de desarrollo básicos existentes para cada dispositivo.
      - Explorar los entornos de desarrollo básicos existentes para cada dispositivo.
 ## 3. Estado del Arte
+![](img/1.png)
+![](img/2.png)
+![](img/3.png)
