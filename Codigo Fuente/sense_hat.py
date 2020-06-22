@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from sense_hat import SenseHat
+from sense_emu import SenseHat
 import time, datetime
 
 hat = SenseHat()
@@ -32,5 +32,4 @@ while True:
 	display_binary(t.hour, 3, hour_color)
 	display_binary(t.minute, 4, minute_color)
 	display_binary(t.second, 5, second_color)
-	display_binary(t.microsecond / 10000, 6, hundrefths_color)
 	time.sleep(0.0001)
