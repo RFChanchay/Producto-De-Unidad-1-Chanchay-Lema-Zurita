@@ -9,5 +9,4 @@
      - Identificar los componentes principales de cada dispositivo y determinar sus funciones.
      - Explorar los entornos de desarrollo básicos existentes para cada dispositivo.
      - Explorar los entornos de desarrollo básicos existentes para cada dispositivo.
-
-  
+## 3. Estado del Arte
