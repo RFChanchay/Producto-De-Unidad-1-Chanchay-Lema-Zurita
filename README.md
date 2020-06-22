@@ -123,14 +123,31 @@ Para el modelo Arduino UNO contaremos con los siguientes componentes
 **¿Qué es CAD?**
 
 Cuando hablamos de CAD nos referimos al diseño asistido por computadora traducido de sus siglas en inglés computer-aided design.
+
 **¿Qué es TinkerCAD?**
 
 TinkerCAD es un software desarrollado por AutoDesk para la creación de modelos 3D basado en geometría sólida constructiva (CSG), este software tiene la particularidad que no es necesario ser un gran experto en diseño 3D ya que inclusive niños pueden crear sus modelos a manera de aprendizaje.
+
 **¿Cómo se relaciona TinkerCAD con Arduino?**
 
-nkerCad tiene un emulador de circuitos electrónicos que viene incluido con un Arduino UNO para emular, incluido un editor de código de Arduino con algunas librerías y un depurador.
+TinkerCad tiene un emulador de circuitos electrónicos que viene incluido con un Arduino UNO para emular, incluido un editor de código de Arduino con algunas librerías y un depurador.
 Todas estas características hacen que no se no haga tan complicado crear programas y circuitos dentro de este entorno ya que el software es sumamente intuitivo y sencillo de usar. 
 Entorno
+
+![](img/7.png)
+
+En la parte derecha contamos con un menú desplegable con distintos componentes electrónicos que nos facilita el software. En la parte izquierda se muestra un recuadro con distintos tutoriales en caso de no tener conocimientos básicos en simuladores de circuitos electrónicos.
+En el menú superior contamos con distintos botones funcionales como lo son: el inicio de simulación, depurador, editor de códigos e inclusive contamos con la opción de compartir.
+El principio de simulación es sencillo ya que únicamente debemos establecer puntos de conexión mediante las líneas que creamos.
+
+#### Editor de código TinkerCAD
+El funcionamiento de este editor de código es similar al software propio de Arduino en caso de que decidamos trabajar con texto ya que su sintaxis de programación es la misma. TinkerCAD cuenta con un generador de códigos mediante bloques el funcionamiento de este es más intuitivo ya que nos evitamos el escribir muchas líneas de código ya que al ser una herramienta visual es más sencillo. El software también nos permite crear un código mezclando bloques y texto.
+
+![](img/8.png)
+
+Ejemplos realizados (revisar el resto de documento para conocer programación y diagramas):
+ - Simulación de semáforo
+ - Simulación de barrido de diodos
 
 
 
