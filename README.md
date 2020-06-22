@@ -1,1 +1,6 @@
-# Producto-De-Unidad-1-Chanchay-Lema-Zurita
+# Arduino, Micro Bit y Raspberry Pi
+
+## 1. Planteamineto del problema
+
+## 2. Objetivos
+ ### General
