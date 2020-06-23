@@ -1,0 +1,85 @@
+
+
+int caso;//variable de casos
+void setup()//bucle de configuracion 
+{
+  pinMode(1, OUTPUT);//inicio declaracion pines de salida
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);//final declaracion de pines de salida
+  pinMode(10, INPUT);//inicio declaracion pines de entrada
+  pinMode(11, INPUT);
+  pinMode(12, INPUT);//final declaracion de pines de entrada
+}
+
+void loop()//bucle de acciones 
+{
+  caso=digitalRead(10)+digitalRead(11);//lectura de pines 10 y 11 
+  //los valores logicos son sumados como enteros y almacenados en la variable
+  switch (caso){//funcion de casos posibles para la variable "caso"
+  	case 0://caso de apagado de LEDS
+    	digitalWrite(1,LOW);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,LOW);
+    	delay(500);
+    break;
+    case 1://caso de encendidio de leds de adentro hacia afuera
+    	digitalWrite(1,LOW);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,HIGH);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,LOW);
+    	delay(500);
+   		digitalWrite(1,LOW);
+    	digitalWrite(2,HIGH);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,HIGH);
+    	digitalWrite(5,LOW);
+    	delay(500);
+        digitalWrite(1,HIGH);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,HIGH);
+    	delay(500);
+    	digitalWrite(1,LOW);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,LOW);
+    	delay(500);
+          
+    break;
+    case 2://caso de encendidio de leds de afuera hacia adentro
+    	digitalWrite(1,HIGH);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,HIGH);
+    	delay(500);
+    	digitalWrite(1,LOW);
+    	digitalWrite(2,HIGH);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,HIGH);
+    	digitalWrite(5,LOW);
+    	delay(500);
+    	digitalWrite(1,LOW);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,HIGH);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,LOW);
+    	delay(500);
+    	digitalWrite(1,LOW);
+    	digitalWrite(2,LOW);
+    	digitalWrite(3,LOW);
+    	digitalWrite(4,LOW);
+    	digitalWrite(5,LOW);
+    	delay(500);
+    
+    break;
+  
+  }
+}
