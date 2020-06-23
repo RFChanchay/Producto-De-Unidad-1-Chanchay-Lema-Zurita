@@ -355,7 +355,21 @@ El Reloj Binario emulado se ve asi:
  - Cargador Usb Tipo C
  - Conexión Ethernet o Wi-Fi
 ## 7. Mapa de Variables
+### Arduino
+#### Simulación de semáforo:
 
+![](img/30.png)
+
+ #### Simulación Barrido de Diodos
+ 
+ ![](img/31.png)
+ 
+ ### MicroBit
+ #### Contador de números dentro de los positivos 
+ 
+ ![](img/32.png)
+ 
+ 
  
  
  
