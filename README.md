@@ -273,12 +273,43 @@ General Purpose Input Output (GPIO) es un sistema de entrada y salida de propós
  - Azul (2): Comunicación mediante el protocolo I2C para comunicarse con periféricos que siguen este protocolo.
  - Verde (2): Destinados a conexión para UART para puerto serie convencional.
  - Morado (5): Comunicación mediante el protocolo SPI para comunicarse con periféricos que siguen este protocolo.
+
+Ejemplos realizados (revisar el resto de documento para conocer programación y diagramas) :
+ - Reloj Binario
+ - Luz Ambiental
+ ## 5.Diagramas
+ ### Arduino
+ #### Simulación de semáforo usando TinkerCAD
+ 
+ ![](img/22.png)
+ 
+ El siguiente circuito pretende emular los ciclos de tiempo que tendría cada luz en un semáforo y el cambio que el mismo presenta en la vida real es decir si la luz de un semáforo es roja la otra es verde y para cambiar al color contrario primero el semáforo debe cambiar a amarillo. 
+ 
+ #### Simulación de barrido de diodos usando TinkerCAD
+ 
+ ![](img/23.png)
+ 
+ En este circuito generamos un encendido de manera secuencial de 5 diodos LED, la secuencia de encendido dependerá de los casos que envíe nuestro dip switch a manera de tablas de verdad donde tenemos 3 casos:
+  - El caso 0 mantiene apagados todos los diodos LED del circuito.
+  - El caso 1 enciende los LEDs de adentro hacia afuera.
+  - El caso 2 enciende los LEDs de afuera hacia adentro.
+  
+### Microbit
+Los diferentes programas realizados en la plataforma de microbit.org se pueden representar mediante diagrama de bloques dentro del lenguaje de JavaScript.
+#### Simulación de solicitud de pare en semaforo
+
+ ![](img/24.png)
+ 
+#### Contador de números dentro de los dispositivos
+
+ ![](img/25.png)
  
  
- 
- 
- 
- 
+
+
+
+
+
  
  
  
