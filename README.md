@@ -317,9 +317,46 @@ El Reloj Binario emulado se ve asi:
 ![](img/28.png)
 ![](img/29.png)
 
+## 6. Lista de Componentes
+### Arduino
+#### Simulación de semáforo
+ - Arduino Uno.
+ - Resistencias de 1k.
+ - Diodos LED: 2 Rojos, 2 Verdes y 2 Amarillos.
+ - TinkerCAD
+#### Simulación Barrido de Diodos
+ - Arduino Uno
+ - Resistencias de 1k
+ - Diodos LED : Distintos Colores
+ - 1 Dip Switch
+ - Protoboard
+ - TinkerCAD
+### MicroBit
+#### Simulación solicitud de pare en un semáforo
+ - MicroBit
+ - Cable de conexión USB
+ - Programación en JavaScript
+#### Contador de números dentro de los positivos
+ - MicroBit
+ - Cable de conexión USB
+ - Programación en JavaScript
+### Raspberry
+#### Luz Ambiental
+ - Pi Zero W
+ - Unicorn pHAT con 32 LED de neopixel RGB programables
+ - Encabezados de 2x20 pines macho y hembra
+ - Colgante y difusor de luz blanca y amarilla
+ - Cable USB A a micro-B de 50 cm
+ - Adaptador mini HDMI a HDMI
+#### Reloj Binario
+ - Sense Hat o Emulador de Sense Hat
+ - Raspberry pi 3 o 4
+ - Periféricos
+ - Cargador Usb Tipo C
+ - Conexión Ethernet o Wi-Fi
+## 7. Mapa de Variables
 
-
-
+ 
  
  
  
