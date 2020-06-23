@@ -220,3 +220,29 @@ Esta pequeña tarjeta va de la mano con la pagina creada por sus desarrolladores
 BBC MicroBit también se puede programar con JavaScript, Pyton y Scratch (añadiendo una extensión).
 
 ![](img/19.png)
+
+### Raspberry Pi
+#### ¿Que es un Raspberry y para qué sirve?
+Raspberry Pi, es un «es un ordenador de tamaño de tarjeta de crédito que se conecta a su televisor y un teclado». Es una placa que soporta varios componentes necesarios en un ordenador común.«Es un pequeño ordenador capaz, que puede ser utilizado por muchas de las cosas que su PC de escritorio hace, como hojas de cálculo, procesadores de texto y juegos. También reproduce vídeo de alta definición», apuntan en la página web del producto.
+Este proyecto fue ideado en 2006 pero no fue lanzado al mercado febrero de 2012. Ha sido desarrollado por un grupo de la Universidad de Cambridge y su misión es fomentar la enseñanza de las ciencias de la computación los niños. De hecho, en enero de este año Google donó más de 15.000 Raspberry Pi para colegios en Reino Unido.
+Es un ordenador muy funcional y debido a su tamaño puede funcionar para muchos otros propósito, claro, hay que tener algunas ideas sobre programación o de computación. Por ejemplo, el primer proyecto de un joven con Raspberry Pi fue convertir su consola NES dañada en una operativa y pudo jugar algunos viejos títulos.
+#### Componentes del Raspberry Pi 4
+ - Características de la Raspberry Pi 4 Broadcom BCM2711, Cortex núcleo cuádruple-A72 (ARM v8) 64-bit SoC @ 1.5GHz
+ - SDRAM LPDDR4-2400 de 1 GB, 2 GB, 4 GB y 8 GB (según el modelo)
+ - 2,4 GHz y 5,0 GHz IEEE 802.11ac inalámbrico, Bluetooth 5.0, BLE
+ - Gigabit Ethernet 2 puertos USB 3.0; 2 puertos USB 2.0.
+ - Cabezal GPIO estándar de 40 pines de Raspberry Pi (totalmente compatible con las placas anteriores)
+ - 2 × puertos micro-HDMI (soportados hasta 4kp60)
+ - Puerto de pantalla MIPI DSI de 2 vías
+ - Puerto de cámara MIPI CSI de 2 carriles
+ - Puerto de audio estéreo de 4 polos y de vídeo compuesto H.265 (decodificación 4kp60)
+ - H264 (decodificación 1080p60, decodificación 1080p30)
+ - Gráficos OpenGL ES 3.0
+ - Ranura para tarjetas Micro-SD para cargar el sistema operativo y el almacenamiento de datos
+ - 5V DC a través de conector USB-C (mínimo 3A*)
+ - 5V DC vía cabezal GPIO (mínimo 3A*)
+ 
+ 
+ 
+ 
+ 
