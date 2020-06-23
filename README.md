@@ -215,6 +215,8 @@ Al igual que en Arduino, esta placa almacena en su memoria un único programa qu
 
 ![](img/18.png)
 
-- ****
+#### Plataforma de trabajo de MicroBit
+Esta pequeña tarjeta va de la mano con la pagina creada por sus desarrolladores, ya que están podemos encontrar herramientas de programación debido a que esta tarjeta tiene un entorno de programación gráfico propio la pagina posee el apartado MakeCode de Microsoft, un sencillo editor gráfico online muy potente y gratuito que posibilita introducirnos en el mundo de la programación de forma intuitiva a través del lenguaje de programación visual o de bloques. Con él aprendemos a pensar como un programador sin caer en los molestos errores de sintaxis. MakeCode es, sin duda, una herramienta a tener muy en cuenta por nuestros profesores.
+BBC MicroBit también se puede programar con JavaScript, Pyton y Scratch (añadiendo una extensión).
 
-
+![](img/19.png)
