@@ -370,7 +370,7 @@ El Reloj Binario emulado se ve asi:
  ![](img/32.png)
  
  ### Raspberry Pi
- Sense Hat and Unicorn pHat
+ #### Sense Hat and Unicorn pHat
   ![](img/33.png)
  
  ## 8. Explicacion del Codigo Fuente
@@ -704,9 +704,11 @@ En este caso pudimos observar cómo reducimos lineas de codigo y si analizamos l
 
 ## 11. Conclusiones
 Las diferentes placas con sus respectivas herramientas de programación, nos demuestran una gama de actividades con la cuales podemos trabajar y programar, y al haber analizado las tres placas junto con sus características y sus prestaciones, llegamos a la conclusión que las tres pueden diferenciarse por su nivel de complejidad, debido a que MicroBit es muy buena para un principiante en la programación y ofrece una variada gama de ejemplos, un arduino representa un punto medio ya que con este ya podemos crear cosas un poco más complejas ayudado de otro tipo de lenguajes como C# y por último Raspberry es la más completa desde sus prestaciones y las diferentes cosas que podemos crear y programar en el. Por lo que dependiendo de nuestro grado de instrucción y el tipo de cosas que queramos llevar a cabo, ya nos podremos decantar por el tipo de placa que se ajuste a nuestros requerimientos.
+
 ## 12. Recomendaciones
  - En TinkerCAD si deseamos realizar una simulación debemos tomar en cuenta que no podremos conectar elementos mediante nodos, es decir que únicamente se puede conectar elementos entre el inicio y final.
  - De microbit.org es poco lo que hay que decir, ya que es una plataforma bastante completa para los objetivos que se han planteado, siendo una plataforma destinada para  proyectos pequeños y medianos rinde bastante bien para dejar volar la mente, la única desventaja es que estamos limitados a las funciones de programación que esta plataforma posea ya que no se puede añadir más funciones, pero la verdad es que son bastante completas.
+ 
  ## 13. Cronograma
  
  ![](img/34.png)
@@ -733,3 +735,46 @@ Hacedores, 14 de Dic. 2017, MicroBit:  micro computadora de educación maker, re
 
 ## 15. Anexos
 ### Manuales de usuario Arduino y ThinkerCAD
+Ingresamos a: https://www.tinkercad.com/
+
+ ![](img/36.png)
+ 
+Iniciamos sesión o nos registramos.
+ 
+ ![](img/37.png)
+ 
+En la parte lateral izquierda seleccionamos circuitos.
+
+![](img/38.png)
+   
+Seleccionamos crear nuevo circuito
+
+![](img/39.png)
+
+Empezamos a Trabajar
+
+### Creación de Semáforo
+En nuestra simulación agregamos una placa Arduino Uno
+
+![](img/40.png)
+
+Agregamos 6 diodos LED 2 rojos, 2 verdes y 2 amarillos.(Podemos editar las características de cada componente dando click en cada uno de ellos).
+
+![](img/41.png)
+
+Conectamos cada resistencia con el ánodo de cada diodo.
+
+![](img/42.png)
+
+Conectamos los cátodos al pin GND del Arduino.
+ 
+![](img/43.png)
+ 
+Conectamos los pines de la siguiente manera: pin 1 al diodo rojo de la izquierda, pin 2 al diodo amarillo de la izquierda, pin 3 al diodo verde de la izquierda, pin 4 al diodo rojo de la izquierda, pin 5 al diodo amarillo de la izquierda, pin 6 al diodo verde de la izquierda.
+
+![](img/44.png)
+ 
+Copiamos el siguiente código en la seccion codigo.
+ 
+ 
+ 
