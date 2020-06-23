@@ -824,3 +824,146 @@ void loop() {
 Iniciamos simulación y comprobamos el funcionamiento de nuestro circuito.
 
 ![](img/46.png)
+
+### Barrido de Diodos
+Creamos un nuevo circuito en TinkerCAD
+
+![](img/47.png)
+
+Agregamos un Arduino y una placa de pruebas.
+
+![](img/48.png)
+
+Agregamos 7 resistencias de 1k, 2 para controlar el circuito mediante switches y los otros 5 para los diodos del barrido.
+
+![](img/49.png)
+
+Agregamos un Dip Switch y lo conectamos con las resistencias de control de tal forma que genere un circuito que envía señales lógicas de 1 o 0.
+
+![](img/50.png)
+
+Conectamos cada switch al pin 10 y 11 respectivamente.
+
+![](img/51.png)
+
+Agregamos 5 diodos y los conectamos a una resistencia su ánodo y su cátodo al gnd.
+
+![](img/52.png)
+
+Conectamos los pines 1,2,3,4 y 5 del arduino a cada resistencia para iluminar cada led.
+
+![](img/53.png)
+
+Ingresamos el siguiente código
+
+```
+int caso;//variable de casos
+void setup()//bucle de configuracion
+{
+  pinMode(1, OUTPUT);//inicio declaracion pines de salida
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);//final declaracion de pines de salida
+  pinMode(10, INPUT);//inicio declaracion pines de entrada
+  pinMode(11, INPUT);
+  pinMode(12, INPUT);//final declaracion de pines de entrada
+}
+
+void loop()//bucle de acciones
+{
+  caso=digitalRead(10)+digitalRead(11);//lectura de pines 10 y 11
+  //los valores logicos son sumados como enteros y almacenados en la variable
+  switch (caso){//funcion de casos posibles para la variable "caso"
+      case 0://caso de apagado de LEDS
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+	break;
+	case 1://caso de encendidio de leds de adentro hacia afuera
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,HIGH);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+  		 digitalWrite(1,LOW);
+   	 digitalWrite(2,HIGH);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,HIGH);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+    	digitalWrite(1,HIGH);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,HIGH);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+     	 
+	break;
+	case 2://caso de encendidio de leds de afuera hacia adentro
+   	 digitalWrite(1,HIGH);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,HIGH);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,HIGH);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,HIGH);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,HIGH);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+    
+	break;
+ 
+  }
+}
+```
+Simulamos y probamos cada caso de barrido
+
+![](img/54.png)
+
+#### Manual de usuario MicroBit en microbit.org
+Para poder hacer un programa dentro de la plataforma de microbit se lo explicara en sencillos pasos.
+
+**1.** Ingresamoa a la pagina oficial de MicroBit que es: microbit.org
+
+![](img/55.png)
+
+**2.** Nos vamos al apartado Let's code, donde nos dan a elegir entre dos tipos de lenguajes de programación, JavaScript en este caso cuenta con programación por linea de código y diagrama de bloques.
+
+![](img/56.png)
+
+**3.** Escogemos el lenguaje de JavaScript en MakeCode editor, donde nos vamos a encontrar con la siguiente interfaz
+
+![](img/57.png)
+
+**4.** Dentro de esta interfaz podemos programar a nuestro gusto dependiendo del tipo de programa que se quiera llevar a cabo, para lo cual se debe conocer como declarar variables si fuera el caso o realizar determinar las acciones a realizar. Todo esto se logra gracias a las opciones y funciones que nos ofrece la columna izquierda de la página, y todo lo que realicemos se podrá emular en la placa que nos presenta en la página.
+
+![](img/58.png)
+
+**5.**Una vez que hayamos realizado nuestro programa debemos descargarlo para poder ejecutarlo en nuestra placa física MicroBit, el programa lo pasamos por cable USB y con eso culminaría el proceso.
+
+![](img/58.png)
