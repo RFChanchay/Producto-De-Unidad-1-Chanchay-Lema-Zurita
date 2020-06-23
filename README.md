@@ -967,3 +967,82 @@ Para poder hacer un programa dentro de la plataforma de microbit se lo explicara
 **5.**Una vez que hayamos realizado nuestro programa debemos descargarlo para poder ejecutarlo en nuestra placa física MicroBit, el programa lo pasamos por cable USB y con eso culminaría el proceso.
 
 ![](img/59.png)
+
+### Raspberry
+#### Reloj Binario
+Primero tenemos que abrir la cosola en la raspberry y colocar los siguientes codigos
+Si está utilizando el Sense HAT, deberá instalar el software para el HAT con los siguientes comandos:
+```
+sudo apt-get update
+sudo apt-get install sense-hat
+sudo pip-3.2 install pillow
+```
+![](img/60.png)
+
+si se esta usando Unicorn pHat 
+```
+sudo apt-get install python-pip python-dev
+sudo pip install unicornhat
+```
+Para descargar el codigo desde la consola usamos el siguiente codigo
+```git clone https://github.com/RFChanchay/Producto-De-Unidad-1-Chanchay-Lema-Zurita/tree/master/Codigo%20Fuente```
+
+Para ejecutar el programa en el emulador de Raspberry Pi
+```sudo python / home / pi / "carppeta donde se encuentre el arcgivo" / sense_hat.py```
+Con ese codigo ya debe iniciar el simulador de sense hat del raspberry pi
+
+![](img/61.png)
+
+### Reloj Binario en la pagina web
+Ingresamo a la siguiente pagina https://trinket.io/sense-hat
+
+![](img/62.png)
+
+Limpiamos el codigo que viene por defecto
+
+![](img/63.png)
+
+Copiamos el siguiente codigo con la difernecia de que en vez de usar
+```from sense_emu import SenseHat``` lo cambiamos ```por from sense_hat import SenseHat```
+
+```
+#!/usr/bin/env python
+
+from sense_hat import SenseHat
+import time, datetime
+
+hat = SenseHat()
+
+year_color = (0, 255, 0)
+month_color = (0, 0, 255)
+day_color = (255, 0, 0)
+hour_color = (0, 255, 0)
+minute_color = (0, 0, 255)
+second_color = (255, 0, 0)
+hundrefths_color = (127, 127, 0)
+off = (0, 0, 0)
+
+hat.clear()
+
+def display_binary(value, row, color):
+	binary_str = "{0:8b}".format(value)
+	for x in range(0, 8):
+		if binary_str[x] == '1':
+			hat.set_pixel(x, row, color)
+		else:
+			hat.set_pixel(x, row, off)
+
+while True:
+	t = datetime.datetime.now()
+	display_binary(t.year % 100, 0, year_color)
+	display_binary(t.month, 1, month_color)
+	display_binary(t.day, 2, day_color)
+	display_binary(t.hour, 3, hour_color)
+	display_binary(t.minute, 4, minute_color)
+	display_binary(t.second, 5, second_color)
+	display_binary(t.microsecond / 10000, 6, hundrefths_color)
+	time.sleep(0.0001)
+```
+Procedemos a correr el codigo nuevo ingresado y ya estaria.
+
+![](img/64.png)
