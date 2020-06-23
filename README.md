@@ -317,6 +317,10 @@ El Reloj Binario emulado se ve asi:
 ![](img/28.png)
 ![](img/29.png)
 
+Lectura de Reloj Binario
+
+![](img/65.png)
+
 ## 6. Lista de Componentes
 ### Arduino
 #### Simulación de semáforo
