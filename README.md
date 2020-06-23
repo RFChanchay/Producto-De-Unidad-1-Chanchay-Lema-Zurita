@@ -1,7 +1,7 @@
 # Arduino, Micro Bit y Raspberry Pi
 
 ## 1. Planteamineto del problema
-
+Identificar componentes de las 3 diferentes placas planteadas, Explicar mediante ejemplos respectivos para cada placa, su funcionamiento ademas de el software necesario para poder programar cada aplicacion.
 ## 2. Objetivos
    - **General**
      - Analizar los componentes, características y plataformas de desarrollo básicas para los dispositivos Arduino, Micro:Bit y Raspberry Pi
