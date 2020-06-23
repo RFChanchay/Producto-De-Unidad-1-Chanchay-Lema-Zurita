@@ -10,9 +10,9 @@
      - Explorar los entornos de desarrollo básicos existentes para cada dispositivo.
      - Explorar los entornos de desarrollo básicos existentes para cada dispositivo.
 ## 3. Estado del Arte
-![](img/0.png)
-![](img/0.png)
-![](img/0.png)
+![](img/1..png)
+![](img/2..png)
+![](img/3..png)
 
 En lo que respecta a nuestro Producto de Unidad cada una de estas investigaciones tienen su aportación pero estas deberán ser analizadas desde 3 perspectivas distintas
 
