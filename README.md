@@ -369,8 +369,55 @@ El Reloj Binario emulado se ve asi:
  
  ![](img/32.png)
  
+ ### Raspberry Pi
  
+  ![](img/33.png)
  
- 
- 
- 
+ ## 8. Explicacion del Codigo Fuente
+ ### Arduino
+ #### Simulación de semáforo:
+ ```//Semaforo
+int rojoSem1=1;int amarilloSem1=2;int verdeSem1=3;//identificacion pines-colores semaforo1
+int rojoSem2=4;int amarilloSem2=5;int verdeSem2=6;//identificacion pines-colores semaforo2
+void setup() {
+  pinMode(rojoSem1,OUTPUT);pinMode(amarilloSem1,OUTPUT);pinMode(verdeSem1,OUTPUT);//declaracion de pines como salida
+  pinMode(rojoSem2,OUTPUT);pinMode(amarilloSem2,OUTPUT);pinMode(verdeSem2,OUTPUT);
+}
+
+void loop() {
+  //semaforo1 en rojo, 2 en verde
+  digitalWrite(amarilloSem1,LOW);
+  digitalWrite(amarilloSem2,LOW);
+  digitalWrite(rojoSem2,LOW);
+  digitalWrite(verdeSem1,LOW);
+  digitalWrite(rojoSem1,HIGH);
+  digitalWrite(verdeSem2,HIGH);
+  delay(3000);//tiempo de 3 segundos
+  //semaforo 2 en amarillo
+  digitalWrite(amarilloSem1,LOW);
+  digitalWrite(amarilloSem2,HIGH);
+  digitalWrite(rojoSem2,LOW);
+  digitalWrite(verdeSem1,LOW);
+  digitalWrite(rojoSem1,HIGH);
+  digitalWrite(verdeSem2,LOW);
+  delay(1000);//tiempo 1 segundo
+  //semaforo2 en rojo, 1 en verde
+  digitalWrite(amarilloSem1,LOW);
+  digitalWrite(amarilloSem2,LOW);
+  digitalWrite(rojoSem2,HIGH);
+  digitalWrite(verdeSem1,HIGH);
+  digitalWrite(rojoSem1,LOW);
+  digitalWrite(verdeSem2,LOW);
+  delay(3000);
+  //semaforo 1 en amarillo
+  digitalWrite(amarilloSem1,HIGH);
+  digitalWrite(amarilloSem2,LOW);
+  digitalWrite(rojoSem2,HIGH);
+  digitalWrite(verdeSem1,LOW);
+  digitalWrite(rojoSem1,LOW);
+  digitalWrite(verdeSem2,LOW);
+  delay(1000);
+}
+```
+ ### Micro Bit
+ ### Raspberry Pi
