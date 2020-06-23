@@ -258,6 +258,22 @@ Para completar todo está la LPDDR4 SDRAM para la placa, que viene en forma de u
 #### Alimentación de la placa
 Otra gran diferencia es la toma de corriente, que se ha ido es la toma micro-USB de los modelos anteriores, y en su lugar hay una toma USB-C. Es un cambio comprensible. Las tolerancias en la fuente de alimentación para el modelo B+ de Raspberry Pi 3 ya eran bastante finas, y la nueva placa puede requerir hasta 3 amperios, eso no es algo que la anterior fuente micro-USB pudiera proporcionar. La placa también puede alimentarse a través de una fuente de alimentación de 5V DC utilizando los cabezales GPIO, y al igual que la Raspberry Pi 3, modelo B+, antes de que lo haga la nueva Raspberry Pi 4 también puede alimentarse a través de Power over Ethernet (PoE) utilizando el PoE HAT oficial que se lanzó junto con el modelo anterior el año pasado.
 
+![](img/20.png)
+
+#### ¿Que es GPIO?
+General Purpose Input Output (GPIO) es un sistema de entrada y salida de propósito general, es decir, consta de una serie de pines o conexiones que se pueden usar como entradas o salidas para múltiples usos. Estos pines están incluidos en todos los modelos de Raspberry Pi aunque con diferencias.
+
+![](img/21.png)
+
+ - Amarillo (2): Alimentación a 3.3V.
+ - Rojo (2): Alimentación a 5V.
+ - Naranja (26): Entradas / salidas de proposito general. Pueden configurarse como entradas o salidas. Ten presente que el nivel alto es de 3.3V y no son tolerantes a tensiones de 5V.
+ - Gris (2): Reservados.
+ - Negro (8): Conexión a GND o masa.
+ - Azul (2): Comunicación mediante el protocolo I2C para comunicarse con periféricos que siguen este protocolo.
+ - Verde (2): Destinados a conexión para UART para puerto serie convencional.
+ - Morado (5): Comunicación mediante el protocolo SPI para comunicarse con periféricos que siguen este protocolo.
+ 
  
  
  
