@@ -1002,7 +1002,7 @@ Limpiamos el codigo que viene por defecto
 
 ![](img/63.png)
 
-Copiamos el siguiente codigo con la difernecia de que en vez de usar
+Copiamos el siguiente codigo con la diferencia de que en vez de usar
 ```from sense_emu import SenseHat``` lo cambiamos ```por from sense_hat import SenseHat```
 
 ```
