@@ -304,8 +304,18 @@ Los diferentes programas realizados en la plataforma de microbit.org se pueden r
 
  ![](img/25.png)
  
+ ### Raspberry
+ Para los ejemplos propuestos se uso utilizo python
+ Entonces la conexion entre el unicorn y la raspberry puesta en un difusor que se puede hacer con una impresora 3d o comprarla en linea 
+ queda asi:
  
+ ![](img/26.png)
+ ![](img/27.png)
+ 
+El Reloj Binario emulado se ve asi:
 
+![](img/28.png)
+![](img/29.png)
 
 
 
