@@ -1,0 +1,14 @@
+let reseteo = 0   
+let Registro_de_pulsacion_par = 0
+input.onButtonPressed(Button.A, function () {
+    reseteo = 0
+    basic.showNumber(reseteo)
+})
+input.onButtonPressed(Button.AB, function () {  
+    Registro_de_pulsacion_par += 2
+    basic.showNumber(Registro_de_pulsacion_par)
+})
+input.onButtonPressed(Button.B, function () {    
+    Registro_de_pulsacion_par += 1
+    basic.showNumber(Registro_de_pulsacion_par)
+})
