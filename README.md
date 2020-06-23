@@ -419,5 +419,124 @@ void loop() {
   delay(1000);
 }
 ```
- ### Micro Bit
- ### Raspberry Pi
+#### Simulación Barrido de Diodos
+```int caso;//variable de casos
+void setup()//bucle de configuracion
+{
+  pinMode(1, OUTPUT);//inicio declaracion pines de salida
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);//final declaracion de pines de salida
+  pinMode(10, INPUT);//inicio declaracion pines de entrada
+  pinMode(11, INPUT);
+  pinMode(12, INPUT);//final declaracion de pines de entrada
+}
+
+void loop()             //bucle de acciones
+{
+  caso=digitalRead(10)+digitalRead(11);       //lectura de pines 10 y 11
+        //los valores logicos son sumados como enteros y almacenados en la variable
+  switch (caso){                //funcion de casos posibles para la variable "caso"
+      case 0:                           //caso de apagado de LEDS
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+	break;
+	case 1:                      //caso de encendido de leds de adentro hacia afuera
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,HIGH);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+  	 digitalWrite(1,LOW);
+   	 digitalWrite(2,HIGH);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,HIGH);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+    	digitalWrite(1,HIGH);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,HIGH);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+     	 
+	break;
+	case 2:                    //caso de encendido de leds de afuera hacia adentro
+   	 digitalWrite(1,HIGH);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,HIGH);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,HIGH);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,HIGH);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,HIGH);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+   	 digitalWrite(1,LOW);
+   	 digitalWrite(2,LOW);
+   	 digitalWrite(3,LOW);
+   	 digitalWrite(4,LOW);
+   	 digitalWrite(5,LOW);
+   	 delay(500);
+    
+	break;
+ 
+  }
+}
+```
+### Micro Bit
+#### Simulación solicitud de pare en un semáforo
+```input.onButtonPressed(Button.A, function () {    // declarar como entrada al botón A 
+    basic.showNumber(5)
+    basic.pause(1000)   // damos una pausa de 1 segundo representado en ms
+    basic.showNumber(4)
+    basic.pause(1000)
+    basic.showNumber(3)
+    basic.pause(1000)
+    basic.showNumber(2)
+    basic.pause(1000)
+    basic.showNumber(1)
+    basic.showIcon(IconNames.No)  // representa el pare con una x 
+    basic.pause(30000)
+    basic.showIcon(IconNames.Yes)   // representa el avance con un visto 
+})
+basic.showIcon(IconNames.Yes)
+```
+#### Contador de números dentro de los positivos
+```let reseteo = 0   // representamos el reset con el numero 0
+let Registro_de_pulsacion_par = 0
+input.onButtonPressed(Button.A, function () {
+    reseteo = 0
+    basic.showNumber(reseteo)
+})
+input.onButtonPressed(Button.AB, function () {   // cuando se presiona A+B se sumara 2
+    Registro_de_pulsacion_par += 2
+    basic.showNumber(Registro_de_pulsacion_par)
+})
+input.onButtonPressed(Button.B, function () {    // al presionar el boton B se suma 1
+    Registro_de_pulsacion_par += 1
+    basic.showNumber(Registro_de_pulsacion_par)
+})
+```
+
+### Raspberry Pi
