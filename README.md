@@ -966,4 +966,4 @@ Para poder hacer un programa dentro de la plataforma de microbit se lo explicara
 
 **5.**Una vez que hayamos realizado nuestro programa debemos descargarlo para poder ejecutarlo en nuestra placa física MicroBit, el programa lo pasamos por cable USB y con eso culminaría el proceso.
 
-![](img/58.png)
+![](img/59.png)
