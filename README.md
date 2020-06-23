@@ -370,7 +370,7 @@ El Reloj Binario emulado se ve asi:
  ![](img/32.png)
  
  ### Raspberry Pi
- 
+ Sense Hat and Unicorn pHat
   ![](img/33.png)
  
  ## 8. Explicacion del Codigo Fuente
@@ -658,4 +658,78 @@ while True:
         strip.show()
         while GPIO.input(SWITCH_PIN) == False:
             time.sleep(0.1)
-	    ```
+```
+## 9.Descripción de Prerrequisitos y Configuracion
+### Arduino
+Para ambas simulaciones al estar utilizando el software de TinkerCAD no es necesario realizar ninguna configuración previa de ningún dispositivo lo único que necesitaremos es acceso a internet y cualquier dispositivo donde se nos haga fácil diseñar.
+### MicroBit
+Para los dos ejemplos no se necesita ningún prerrequisito adicional debido a que se trabaja en la plataforma online creada por los mismos desarrolladores de la placa, en caso de programar con Python lo único que se necesitaría es un editor de código.
+### Raspberry
+Para realizar la primera simulación se necesita una raspberry pi zero con python para poder representar el código necesitamos el sense hat o un simulador de sense hat
+Para el segundo ejemplo se necesita un raspberry pi 3 o 4 con  python 3
+
+## 10. Aportaciones
+### Programa semáforo en PIC
+#### ¿Qué es un PIC?
+Programmable Integrated Circuit o en español Circuito Integrado Programable, es un chip microcontrolador que ejecutara las instrucciones que se le han sido grabadas en su memoria.
+Al ser un microcontrolador este nos otorga las mismas funciones que un Arduino, pero los PIC al hablar de temas como espacio o precio, estos terminan ganando ya que nos permite diseñar circuitos según nuestra necesidad.
+Los PIC son desarrollados por la compañía Microchip y pertenecen a la misma familia de microcontroladores de Arduino RISC.
+A diferencia de Arduino no se necesitará de un único lenguaje de programación ya que existen varios programas de desarrollo que nos permiten trabajar con cualquier lenguaje de programación, esto ya que lo importante en un PIC sera el .HEX que será cargado en su memoria. El .HEX es un archivo que contiene nuestro programa con sus instrucciones en lenguaje de máquina.
+
+#### Semáforo en PIC 
+El funcionamiento del semáforo es el mismo que el presentado anteriormente en arduino, pero ahora desarrollaremos el programa usando el lenguaje C mediante el programa MikroC y para su simulación usaremos el programa proteus.
+
+#### Diagrama
+
+  ![](img/35.png)
+
+Para este circuito en funcionamiento es igual al Arduino pero sus salidas están conectadas en el Puerto B.
+#### Programa
+```void main() {
+PORTB=0x00;
+TRISB=0x00;  //configuramos el puerto b como salidas
+while(1) {
+PORTB=0b0100001; //encendemos los pines b0 y b6  ROJO VERDE
+delay_ms(3000);
+PORTB=0b0010001; //encendemos los pines b0 y b4  ROJO AMARILLO
+delay_ms(1000);
+PORTB=0b0001100; //encendemos los pines b2 y b3  VERDE ROJO
+delay_ms(1000);
+PORTB=0b0001010;  //encendemos los pines b1 y b3  AMARILLO ROJO
+delay_ms(3000);
+}
+}
+```
+En este caso pudimos observar cómo reducimos lineas de codigo y si analizamos la relación de precio usar este microcontrolador nos cuesta 4 dólares mientras que un Arduino 10 dólares, pero tenemos que tomar en cuenta que necesitaremos una programadora para ingresar el código al microcontrolador.
+
+## 11. Conclusiones
+Las diferentes placas con sus respectivas herramientas de programación, nos demuestran una gama de actividades con la cuales podemos trabajar y programar, y al haber analizado las tres placas junto con sus características y sus prestaciones, llegamos a la conclusión que las tres pueden diferenciarse por su nivel de complejidad, debido a que MicroBit es muy buena para un principiante en la programación y ofrece una variada gama de ejemplos, un arduino representa un punto medio ya que con este ya podemos crear cosas un poco más complejas ayudado de otro tipo de lenguajes como C# y por último Raspberry es la más completa desde sus prestaciones y las diferentes cosas que podemos crear y programar en el. Por lo que dependiendo de nuestro grado de instrucción y el tipo de cosas que queramos llevar a cabo, ya nos podremos decantar por el tipo de placa que se ajuste a nuestros requerimientos.
+## 12. Recomendaciones
+ - En TinkerCAD si deseamos realizar una simulación debemos tomar en cuenta que no podremos conectar elementos mediante nodos, es decir que únicamente se puede conectar elementos entre el inicio y final.
+ - De microbit.org es poco lo que hay que decir, ya que es una plataforma bastante completa para los objetivos que se han planteado, siendo una plataforma destinada para  proyectos pequeños y medianos rinde bastante bien para dejar volar la mente, la única desventaja es que estamos limitados a las funciones de programación que esta plataforma posea ya que no se puede añadir más funciones, pero la verdad es que son bastante completas.
+ ## 13. Cronograma
+ 
+ ![](img/34.png)
+ 
+ ## 14 Bibliografía
+ References
+Agbeyangi, A. O., Alashiri, O. A., & Otunuga, A. E. (2020). Automatic Identification of Vehicle Plate Number using Raspberry Pi. 2020 International Conference in Mathematics, Computer Engineering and Computer Science (ICMCECS). doi:10.1109/icmcecs47690.2020.246983
+
+Artero, O. T. (2013). Arduino: Curso práctico de formación. Alfaomega.
+Quinonez, Y., Lizarraga, C., Peraza, J., Estrada, R., & Arredondo, D. (2019). Application to control dog feeding using the Arduino platform and GSM/GPRS technology. 2019 8th International Conference On Software Process Improvement (CIMPS). doi:10.1109/cimps49236.2019.9082420
+
+Vostinar, P., & Klimova, N. (2019). Experience with Using Robots for Teaching Programming. 2019 International Conference on Information and Digital Technologies (IDT). doi:10.1109/dt.2019.8813310
+Que es pwm y como funciona. (n.d.). Retrieved June 17, 2020, from https://www.shoptronica.com/curiosidades-tutoriales-y-gadgets/4517-que-es-pwm-y-como-funciona-0689593953254.html
+
+Barnes, R., & Press, R. R. (n.d.). Build a binary clock. Retrieved from https://magpi.raspberrypi.org/articles/binary-clock
+F, A. (2013, July 20). ¿Qué es Raspberry PI y para qué sirve? Retrieved from https://www.abc.es/tecnologia/informatica-hardware/20130716/abci-raspberry-como-201307151936.html#:~:text=Sin embargo, ¿Qué es Raspberry,su televisor y un teclado».&text=La placa, que antes era,de Ethernet y salida HDMI.
+
+Mood Light - Pi Zero W Project Kit. (n.d.). Retrieved from https://shop.pimoroni.com/products/mood-light-pi-zero-w-project-kit
+
+Un vistazo a proyectos basados en Raspberry Pi. (n.d.). Retrieved from https://www.ionos.es/digitalguide/servidores/know-how/un-vistazo-a-proyectos-basados-en-raspberry-pi/
+micro:es, comunidad micro:bit en España, ¿Que es microbit?, no data la fecha de publicación, recopilado de: http://microes.org/que-es-microbit.php
+
+Hacedores, 14 de Dic. 2017, MicroBit:  micro computadora de educación maker, recopilado de: https://hacedores.com/micro-bit-microcomputadora-de-eduacion-maker/#:~:text=MicroBit%20es%20una%20tarjeta%20de,y%20otros%20s%C3%ADmbolos%20y%20caracteres.
+
+## 15. Anexos
+### Manuales de usuario Arduino y ThinkerCAD
