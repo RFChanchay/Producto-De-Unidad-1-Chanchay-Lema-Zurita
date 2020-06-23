@@ -241,6 +241,26 @@ Es un ordenador muy funcional y debido a su tamaño puede funcionar para muchos 
  - Ranura para tarjetas Micro-SD para cargar el sistema operativo y el almacenamiento de datos
  - 5V DC a través de conector USB-C (mínimo 3A*)
  - 5V DC vía cabezal GPIO (mínimo 3A*)
+ - Alimentación a través de Ethernet (PoE) habilitada (requiere PoE HAT separado)
+ - Temperatura de funcionamiento: 0 – 50 grados C ambiente
+ #### El procesador
+ El procesador encapsulado, que utiliza el mismo dispersor de calor para un mejor control térmico que el modelo anterior, puede tener el mismo aspecto desde el exterior. Pero mientras que el modelo de la Raspberry Pi 3 se construyó en torno al procesador Broadcom BCM2837, un ARM Cortex-A53 de cuatro núcleos a 1,4 GHz, la nueva placa se ha construido en torno al Broadcom BCM2711, un ARM Cortex-A72 de cuatro núcleos a 64 bits a 1,5 GHz. Aunque esto no parezca significativo, hay algunas grandes diferencias entre las arquitecturas centrales de estos dos procesadores. 
+Mientras que el A53 fue diseñado como un núcleo de rango medio, y para la eficiencia, el A72 es un núcleo de rendimiento, así que a pesar de la aparentemente pequeña diferencia en la velocidad del reloj, la diferencia de rendimiento real entre los núcleos es realmente significativa.
+#### USB y Ethernet
+La diferencia más notable con respecto a los modelos anteriores es que el Microchip LAN7515, que actuaba como hub USB y como controlador Ethernet para la Pi, no aparece en la nueva placa. En su lugar se encuentra el VLI VL805, que proporciona un concentrador USB 3.0 a través de un bus PCI Express. 
+El uso del bus PCI Express proporcionado por el nuevo BCM2711 significa que no sólo ahora tenemos capacidad USB 3.0, sino que el Gigabit Ethernet que se proporcionaba anteriormente a través del bus USB y el chip LAN7515 -que tenía un rendimiento máximo limitado a unos 300Mbps- ahora se proporciona utilizando el Broadcom BCM54213PE en un bus separado para el tráfico USB. 
+Esto significa que, en lugar de ser estrangulado como vimos con el modelo B+ de Raspberry Pi 3, la nueva Raspberry Pi 4 tiene una Gigabit Ethernet “real”. 
+La nueva placa Raspberry Pi tiene tanto Gigabit Ethernet “real” como dos puertos USB 3.0, así como un par de puertos USB 2 más.
+#### Soporte Inalámbrico
+El mismo chip Cypress CYW43455 que vimos en Raspberry Pi 3, modelo B+, proporciona soporte inalámbrico en un módulo apantallado por RF. Ofrece redes inalámbricas IEEE 802.11.b/g/n/ac de banda dual de 2.4GHz y 5GHz, así como Bluetooth 5.0 y Bluetooth LE.
+#### La Memoria
+Para completar todo está la LPDDR4 SDRAM para la placa, que viene en forma de un chip empaquetado en Micron FBGA, y aquí es donde aparece otra gran diferencia con respecto a los modelos anteriores de Raspberry Pi. A diferencia de cualquier placa anterior, la nueva Raspberry Pi 4 está disponible en tres modelos diferentes, cada uno de los cuales ofrece diferentes opciones de memoria. La nueva placa puede venir con 1 GB, 2 GB o 4 GB de RAM.
+#### Alimentación de la placa
+Otra gran diferencia es la toma de corriente, que se ha ido es la toma micro-USB de los modelos anteriores, y en su lugar hay una toma USB-C. Es un cambio comprensible. Las tolerancias en la fuente de alimentación para el modelo B+ de Raspberry Pi 3 ya eran bastante finas, y la nueva placa puede requerir hasta 3 amperios, eso no es algo que la anterior fuente micro-USB pudiera proporcionar. La placa también puede alimentarse a través de una fuente de alimentación de 5V DC utilizando los cabezales GPIO, y al igual que la Raspberry Pi 3, modelo B+, antes de que lo haga la nueva Raspberry Pi 4 también puede alimentarse a través de Power over Ethernet (PoE) utilizando el PoE HAT oficial que se lanzó junto con el modelo anterior el año pasado.
+
+ 
+ 
+ 
  
  
  
