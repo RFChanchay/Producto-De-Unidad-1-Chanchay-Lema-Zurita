@@ -163,5 +163,58 @@ Micro Bit fue diseñada para alentar a los niños a participar activamente en la
  - Una nueva función posibilita las comunicaciones entre esas máquinas, lo cual significa que una Micro Bit pueda transmitir información a otra, abriendo un nuevo espectro de posibilidades.
 
 **Componentes de MicroBit**
- - **Leds**
- Micro:bit dispone de 25 LEDs programables individualmente que te permiten mostrar texto, números e imágenes.
+ - **Leds:**
+ Microbit dispone de 25 LEDs programables individualmente que te permiten mostrar texto, números e imágenes.
+ 
+ ![](img/9.png)
+ 
+ - **Botones:**
+ Hay dos botones en la cara frontal de micro:bit (etiquetados como A y B). Puedes detectar cuándo son pulsados de forma independiente o a la vez y ejecutar una acción en cada caso.
+ 
+ ![](img/10.png)
+ 
+ - **Pines de entrada y salida:**
+ Microbit es ampliable hasta donde imagines. Dispone de 25 conectores situados en el borde inferior . A través de ellos podrás programar motores, LEDs o cualquier otro componente o sensor externo que conectes de Arduino o similares.
+ 
+ ![](img/11.png)
+ 
+ - **Sensor de luz:**
+ Los LEDs de la placa micro:bit también pueden actuar como entrada haciendo que detecten la luz ambiente.
+ 
+ ![](img/12.png)
+ 
+ - **Sensor de temperatura:**
+ El sensor de temperatura integrado en la placa detecta la temperatura ambiente en grados Celsius.
+ 
+  ![](img/13.png)
+ 
+ - **Acelerómetro:**
+El acelerómetro mide la aceleración de tu micro:bit. Se activa cuando tu placa se mueve y también puede detectar otras acciones como agitar, girar y hasta soltar tu micro:bit en caída libre!
+
+![](img/14.png)
+
+- **Brujula:**
+La brújula detecta el campo magnético terrestre por lo que puedes saber en qué dirección está orientada tu micro:bit. (Necesita ser calibrada para asegurar un resultado preciso.)
+
+![](img/15.png)
+
+- **Radio:**
+La radio te permite comunicar tu micro:bit con otras micro:bit. Por ejemplo, puedes conectar todas las tarjetas dentro de un aula a una misma emisora, usarla para enviar mensajes entre ellas y mucho más!.
+
+![](img/16.png)
+
+- **Bluetooth:**
+El BLE (Bluetooth Low Energy) permite a micro:bit enviar y recibir datos vía bluetooth para comunicarse de forma inalámbrica con PCs, Teléfonos y Tablets.
+
+![](img/17.png)
+
+- **USB y conector para batería externa:**
+La placa micro:bit puede alimentarse a través del puerto USB. También dispone de un conector específico para 2 pilas AAA o una batería.
+Al igual que en Arduino, esta placa almacena en su memoria un único programa que se ejecuta en cuanto recibe alimentación (ya que carece de un conmutador de encendido y apagado).
+
+
+![](img/18.png)
+
+- ****
+
+
